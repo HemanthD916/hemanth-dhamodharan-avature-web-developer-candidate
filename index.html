@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, viewport-fit=cover">
+  <title>Hemanth Dhamodharan | Web Developer Candidate for Avature</title>
+  <meta name="description" content="Portfolio of Hemanth Dhamodharan, Web Developer candidate for Avature. Specializing in HTML, CSS, JavaScript, Python, SQL, Git, and AI-assisted web development workflows.">
+  <meta name="robots" content="index, follow">
+
+  
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hemanth Dhamodharan | Web Developer Candidate for Avature">
+  <meta property="og:description" content="Dedicated Web Developer candidate with background in Business Computer Information Systems, AI engineering workflows, and enterprise SaaS technology.">
+
+  
+  <style>
+    :root {
+      --primary-color: #0b192c;
+      --secondary-color: #1e3a8a;
+      --accent-color: #0284c7;
+      --accent-hover: #0369a1;
+      --bg-light: #f8fafc;
+      --card-bg: #ffffff;
+      --text-dark: #0f172a;
+      --text-muted: #475569;
+      --border-color: #cbd5e1;
+      --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+      padding-top: 0;
+    }
+
+    
+    h1, h2, h3, h4, .section-title {
+      letter-spacing: 1.5px !important;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--text-dark) !important;
+    }
+
+    
+    header {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-decoration: none;
+      letter-spacing: 1.5px !important;
+    }
+
+    .brand span {
+      color: var(--accent-color);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px !important;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    
+    .hero {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: #ffffff;
+      padding: 4rem 2rem;
+      border-radius: 12px;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 10px 25px rgba(11, 25, 44, 0.2);
+    }
+
+    .hero h1 {
+      font-size: 2.25rem;
+      color: #ffffff !important;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #e2e8f0;
+      max-width: 800px;
+      margin-bottom: 1.5rem;
+    }
+
+    .clearance-badge {
+      display: inline-block;
+      background-color: rgba(2, 132, 199, 0.25);
+      border: 1px solid var(--accent-color);
+      color: #7dd3fc;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px !important;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 1px !important;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-color);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .btn-outline {
+      border: 2px solid #ffffff;
+      color: #ffffff;
+    }
+
+    .btn-outline:hover {
+      background-color: #ffffff;
+      color: var(--primary-color);
+    }
+
+    
+    .section-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .section-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 3px solid var(--accent-color);
+      padding-bottom: 0.5rem;
+      display: inline-block;
+    }
+
+    
+    ul.bullet-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul.bullet-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-dark);
+      font-size: 0.95rem;
+    }
+
+    ul.bullet-list li::before {
+      content: "•";
+      color: var(--accent-color);
+      font-weight: bold;
+      font-size: 1.2rem;
+      position: absolute;
+      left: 0;
+      top: -0.1rem;
+    }
+
+    
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-category {
+      background-color: #f1f5f9;
+      padding: 1.25rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    .skill-category h3 {
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .chip-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .chip {
+      background-color: #ffffff;
+      border: 1px solid var(--border-color);
+      color: var(--text-dark);
+      padding: 0.35rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .chip-highlight {
+      background-color: #e0f2fe;
+      border-color: #7dd3fc;
+      color: #0369a1;
+    }
+
+    
+    .notice-box {
+      background-color: #eff6ff;
+      border-left: 4px solid var(--accent-color);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      color: #1e40af;
+    }
+
+    
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1rem;
+    }
+
+    .course-card {
+      background-color: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .course-card h4 {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark) !important;
+    }
+
+    .course-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .core-skill-badge {
+      align-self: flex-start;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 3px;
+      letter-spacing: 1px !important;
+    }
+
+    
+    .timeline-item {
+      border-left: 3px solid var(--accent-color);
+      padding-left: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .timeline-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    
+    footer {
+      background-color: var(--primary-color);
+      color: #94a3b8;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+      .course-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">HEMANTH <span>DHAMODHARAN</span></a>
+      <nav>
+        <ul>
+          <li><a href="#about">PROFILE</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#coursework">COURSES</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+
+    
+    <section class="hero" id="about">
+      <h1>WEB DEVELOPER CANDIDATE FOR AVATURE</h1>
+      
+      <p>
+        Business Computer Information Systems graduate at University of North Texas and Master of Science in Business Analytics & Artificial Intelligence student at The University of Texas at Dallas. Passionate about delivering cross browser, cross platform enterprise web solutions, leveraging modern HTML/CSS/JavaScript, structured backend logic, Git version control, and AI assisted engineering workflows.
+      </p>
+      <div class="btn-group">
+        <a href="#skills" class="btn btn-primary">EXPLORE TECHNICAL SKILLS</a>
+        <a href="#coursework" class="btn btn-outline">VIEW RELATED COURSES</a>
+      </div>
+    </section>
+
+    
+    <section class="section-card">
+      <h2>PROFESSIONAL PROFILE & AVATURE ALIGNMENT</h2>
+      <ul class="bullet-list">
+        <li><strong>Web Development Capabilities:</strong> Experienced in engineering clean HTML, CSS, JavaScript, TypeScript, Python, Java, and SQL applications with high cross browser fidelity.</li>
+        <li><strong>Enterprise SaaS & AI Interest:</strong> Actively gaining hands on experience in scaling AI driven SaaS talent management solutions using tools like Claude Code for verification and workflow automation.</li>
+        <li><strong>Knowledge:</strong> Proficient in structured object oriented programming, data architecture, and web development.</li>
+        <li><strong>Security Clearance Readiness:</strong> Willing and fully eligible to be sponsored for US government security clearance.</li>
+        <li><strong>Collaboration & Communication:</strong> Skilled in Git version control, agile coordination, structured technical documentation, and root cause debugging across cross functional teams.</li>
+      </ul>
+    </section>
+
+    
+    <section class="section-card" id="skills">
+      <h2>CORE TECHNICAL SKILLS</h2>
+      <div class="skills-grid">
+        
+        <div class="skill-category">
+          <h3>WEB & FRONTEND</h3>
+          <div class="chip-container">
+            <span class="chip chip-highlight">HTML5</span>
+            <span class="chip chip-highlight">CSS3</span>
+            <span class="chip chip-highlight">JavaScript</span>
+            <span class="chip chip-highlight">TypeScript</span>
+            <span class="chip">Cross Browser Testing</span>
+            <span class="chip">Cross Platform UI</span>
+            <span class="chip">Templating Concepts</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>LANGUAGES & BACKEND</h3>
+          <div class="chip-container">
+            <span class="chip chip-highlight">Python</span>
+            <span class="chip chip-highlight">SQL</span>
+            <span class="chip">Java</span>
+            <span class="chip">C++</span>
+            <span class="chip">C#</span>
+            <span class="chip">COBOL</span>
+            <span class="chip">PowerShell</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>TOOLS & AI WORKFLOWS</h3>
+          <div class="chip-container">
+            <span class="chip chip-highlight">Git / GitHub</span>
+            <span class="chip chip-highlight">Claude Code</span>
+            <span class="chip">Jupyter Notebooks</span>
+            <span class="chip">Tableau</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Excel</span>
+            <span class="chip">PuTTY / WinSCP</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>PLATFORMS & DATABASE</h3>
+          <div class="chip-container">
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">IBM Db2</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Windows</span>
+            <span class="chip">Visio</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="section-card" id="coursework">
+      <h2>RELEVANT COURSEWORK & SKILLS </h2>
+      
+      <div class="notice-box">
+        <strong>VERIFICATION NOTE:</strong> Majority of the listed courses below are omitted from my resume due to space constraints but all coursework is fully verifiable via my LinkedIn profile.
+      </div>
+
+      <div class="course-grid">
+
+        <div class="course-card">
+          <h4>1. Web-Based Information Technologies</h4>
+          <p>Web development skills, ecommerce architectures, digital collaboration, and security protocols.</p>
+          <span class="core-skill-badge">Web Development</span>
+        </div>
+
+        <div class="course-card">
+          <h4>2. Object Oriented Programming for Business</h4>
+          <p>Java programming, class libraries, inheritance, polymorphism, and modular software construction.</p>
+          <span class="core-skill-badge">Java Programming</span>
+        </div>
+
+        <div class="course-card">
+          <h4>3. Enterprise Programming</h4>
+          <p>Enterprise Java development, NetBeans, MySQL database integration, and distributed system design.</p>
+          <span class="core-skill-badge">Enterprise Java</span>
+        </div>
+
+        <div class="course-card">
+          <h4>4. Computer Science I</h4>
+          <p>Problem-solving techniques, algorithmic thinking, software design, and structured programming.</p>
+          <span class="core-skill-badge">Software Design</span>
+        </div>
+
+        <div class="course-card">
+          <h4>5. Computer Science II</h4>
+          <p>Data structures, object-oriented design patterns, memory execution, and software architecture.</p>
+          <span class="core-skill-badge">Data Structures</span>
+        </div>
+
+        <div class="course-card">
+          <h4>6. Analysis of Business Information Systems</h4>
+          <p>Systems analysis, requirements modeling, modular design, task definition, and development planning.</p>
+          <span class="core-skill-badge">Requirements Modeling</span>
+        </div>
+
+        <div class="course-card">
+          <h4>7. Fundamentals of Information Technology Security</h4>
+          <p>Application security development life cycle, privacy frameworks, and software protection.</p>
+          <span class="core-skill-badge">Application Security</span>
+        </div>
+
+        <div class="course-card">
+          <h4>8. Business Data Communications & Networking</h4>
+          <p>Network architecture, TCP/IP fundamentals, current network technologies, and system hardware.</p>
+          <span class="core-skill-badge">Network Architecture</span>
+        </div>
+
+        <div class="course-card">
+          <h4>9. Administration & Policy in Information Security</h4>
+          <p>Strategic security planning, disaster recovery planning, security models, and client-server systems.</p>
+          <span class="core-skill-badge">Security Architecture</span>
+        </div>
+
+        <div class="course-card">
+          <h4>10. Introduction to Database Applications</h4>
+          <p>Database design, SQL user languages, file structures, and data resource management.</p>
+          <span class="core-skill-badge">SQL Databases</span>
+        </div>
+
+        <div class="course-card">
+          <h4>11. Information Technology Management</h4>
+          <p>IT department governance, systems implementation, assessment, ethics, and career planning.</p>
+          <span class="core-skill-badge">IT Governance</span>
+        </div>
+
+        <div class="course-card">
+          <h4>12. Mainframe Concepts</h4>
+          <p>COBOL syntax, data validation, batch/interactive JCL, report generation, and structured design.</p>
+          <span class="core-skill-badge">COBOL</span>
+        </div>
+
+        <div class="course-card">
+          <h4>13. Advanced Mainframe Concepts</h4>
+          <p>Advanced COBOL, interactive system optimization, data structures, and debugging utilities.</p>
+          <span class="core-skill-badge">System Optimization</span>
+        </div>
+
+        <div class="course-card">
+          <h4>14. Organizational Behavior</h4>
+          <p>Team dynamics, workplace communication, decision making, leadership, and organizational culture.</p>
+          <span class="core-skill-badge">Team Collaboration</span>
+        </div>
+
+        <div class="course-card">
+          <h4>15. Strategic Management</h4>
+          <p>Enterprise management, executive decision making, functional integration, and operational strategy.</p>
+          <span class="core-skill-badge">Project Planning</span>
+        </div>
+
+        <div class="course-card">
+          <h4>16. Foundations of Marketing Practice</h4>
+          <p>Integrated marketing communications, product development, target opportunities, and strategic planning.</p>
+          <span class="core-skill-badge">Digital Marketing</span>
+        </div>
+
+        <div class="course-card">
+          <h4>17. Basic Information Systems</h4>
+          <p>Management information systems, decision support tools, computing capabilities, and business packages.</p>
+          <span class="core-skill-badge">Decision Support</span>
+        </div>
+
+        <div class="course-card">
+          <h4>18. Introduction to Computers in Business</h4>
+          <p>Basic computing concepts, hardware fundamentals, computer history, and foundational programming.</p>
+          <span class="core-skill-badge">Computing Fundamentals</span>
+        </div>
+
+        <div class="course-card">
+          <h4>19. Data Analysis with Spreadsheets</h4>
+          <p>Numerical data collection, statistical presentation, charts, sampling, and productivity metrics.</p>
+          <span class="core-skill-badge">Data Presentation</span>
+        </div>
+
+        <div class="course-card">
+          <h4>20. Business Statistics with Spreadsheets</h4>
+          <p>Statistical inference, ANOVA, regression models, correlation analysis, and case studies.</p>
+          <span class="core-skill-badge">Spreadsheet Analytics</span>
+        </div>
+
+        <div class="course-card">
+          <h4>21. Accounting Principles I (Financial Accounting)</h4>
+          <p>Financial statement analysis, cash flow evaluation, income interpretation, and reporting processes.</p>
+          <span class="core-skill-badge">Financial Reporting</span>
+        </div>
+
+        <div class="course-card">
+          <h4>22. Accounting Principles II (Managerial Accounting)</h4>
+          <p>Cost behavior analysis, operational budgeting, cost-volume-profit relations, and decision analysis.</p>
+          <span class="core-skill-badge">Cost Analysis</span>
+        </div>
+
+        <div class="course-card">
+          <h4>23. Legal & Ethical Environment of Business</h4>
+          <p>Contracts, sales law, regulatory policies, Uniform Commercial Code, and business enterprise ethics.</p>
+          <span class="core-skill-badge">Regulatory Compliance</span>
+        </div>
+
+        <div class="course-card">
+          <h4>24. Finance</h4>
+          <p>Money systems, present value calculations, interest rates, security markets, and financial decisions.</p>
+          <span class="core-skill-badge">Financial Decision-Making</span>
+        </div>
+
+        <div class="course-card">
+          <h4>25. Principles of Macroeconomics</h4>
+          <p>Economic growth, monetary policy, national income determinants, fiscal policy, and banking systems.</p>
+          <span class="core-skill-badge">Economic Analysis</span>
+        </div>
+
+        <div class="course-card">
+          <h4>26. Principles of Microeconomics</h4>
+          <p>Market economics, firm theory, comparative economic systems, and microeconomic problem analysis.</p>
+          <span class="core-skill-badge">Market Analytics</span>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="section-card" id="experience">
+      <h2>WORK EXPERIENCE</h2>
+      
+      <div class="timeline-item">
+        <div class="timeline-title">AI ENGINEERING INTERN (REMOTE)</div>
+        <div class="timeline-subtitle">D2R AI Labs Private Limited | June 2026 - September 2026</div>
+        <ul class="bullet-list">
+          <li>Constructed robust backend integrations using Python and verified data accuracy using targeted SQL queries.</li>
+          <li>Executed PowerShell process forensics to evaluate system stability and optimize script performance.</li>
+          <li>Automated application tests using scripting languages and strictly controlled traceable live deployment changes using Git version control.</li>
+          <li>Applied security judgment alongside root cause debugging, incorporating Claude Code solely for logic verification.</li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section class="section-card" id="projects">
+      <h2>PROJECT EXPERIENCE</h2>
+
+      <div class="timeline-item">
+        <div class="timeline-title">HEALTHCARE FINANCIAL RISK AND COST ANALYTICS DASHBOARD</div>
+        <div class="timeline-subtitle">Power BI, PostgreSQL, Python | Summer 2026</div>
+        <ul class="bullet-list">
+          <li>Engineered a local PostgreSQL database using SQL queries to manage and transform complex medical cost datasets.</li>
+          <li>Created Python scripts with Pandas, Matplotlib, and Seaborn to generate correlation heatmaps visualizing health factors versus expenses.</li>
+          <li>Built interactive Power BI dashboards with dynamic filtering to pinpoint demographic risk drivers.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-title">CAMPGROUND RESERVATION DATABASE SYSTEM</div>
+        <div class="timeline-subtitle">IBM Db2, SQL | Spring 2025</div>
+        <ul class="bullet-list">
+          <li>Designed 4+ table relational schemas in IBM Db2 using keys and indexes to enforce data integrity.</li>
+          <li>Developed 7+ complex SQL queries with multi-table joins and aggregations for business intelligence.</li>
+          <li>Analyzed reservation occupancy trends and campsite amenity utilization patterns.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-title">LIBRARY MANAGEMENT SYSTEM</div>
+        <div class="timeline-subtitle">Python | Summer 2024</div>
+        <ul class="bullet-list">
+          <li>Applied Python OOP concepts including inheritance and polymorphism to manage catalog records using JSON.</li>
+          <li>Implemented full CRUD operations as callable methods to manage catalog inventory, members, and loan records.</li>
+          <li>Automated loan status tracking, overdue fine calculations, and lost item reporting features.</li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section class="section-card">
+      <h2>CERTIFICATIONS & JOB SIMULATIONS</h2>
+      <ul class="bullet-list">
+        <li><strong>Datacom Automation AI Accelerator Job Simulation (Spring 2026):</strong> Focused on AI workflow automation, structured technical documentation, workflow mapping, prompt engineering, and system specification design.</li>
+        <li><strong>Quantium Data Analytics Job Simulation (Spring 2025):</strong> Mastered data cleaning, data validation, visualization, statistical analysis, A/B testing, and patient segmentation in Python & R.</li>
+        <li><strong>Boston Consulting Group Data Science Job Simulation (Spring 2025):</strong> Performed business hypothesis development, data analysis, visualization, mathematical modeling, and information synthesis.</li>
+        <li><strong>IBM Z Xplore Advanced Badge (Fall 2024):</strong> Mainframe administration, JCL, data set management, Unix, Zowe Framework, Node.js, COBOL, and REXX scripting.</li>
+        <li><strong>Microsoft Office Specialist: Excel Associate (Spring 2024):</strong> Excel 2019 validation and spreadsheet modeling certification.</li>
+      </ul>
+    </section>
+
+    
+    <section class="section-card">
+      <h2>EDUCATION</h2>
+      <div class="timeline-item">
+        <div class="timeline-title">MASTER OF SCIENCE IN BUSINESS ANALYTICS AND ARTIFICIAL INTELLIGENCE</div>
+        <div class="timeline-subtitle">The University of Texas at Dallas | Expected Graduation: Fall 2027</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-title">BACHELOR OF SCIENCE IN BUSINESS COMPUTER INFORMATION SYSTEMS</div>
+        <div class="timeline-subtitle">University of North Texas | Awarded May 2026 | GPA: 3.2</div>
+      </div>
+    </section>
+
+  </div>
+
+  
+  <footer>
+    <p>Hemanth Dhamodharan - Web Developer Portfolio</p>
+    <p>Targeted for HR & Engineering Recruitment at Avature</p>
+  </footer>
+
+</body>
+</html>
